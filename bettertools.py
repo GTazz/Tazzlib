@@ -5,8 +5,8 @@ from time import sleep
 
 def erase_line(size):
 
-    # Requer um único argumento.
-    # O argumento define o tamanho numérico do output que, o mesmo, irá apagar.
+    # Takes a single argument.
+    # The argument defines a numeric size of the last output, then, erases it.
 
     columns = int(str(get_terminal_size()).split('=')[1].split(',')[0])
 
@@ -35,8 +35,8 @@ def name_input(the_input):
 
 def int_input(the_input, error_message):
 
-    # (1) O primeiro argumento define a string dentro do input.
-    # (2) O segundo argumento define a mensagem de erro, em formato de string.
+    # (1) The first argument defines the string inside the input.
+    # (2) The secound argument defines an error message, in string format.
 
     message_size = len(error_message)
     while True:
@@ -59,10 +59,10 @@ def int_input(the_input, error_message):
 
 def opt_input(the_input,  options, error_message):
 
-    # (1) O primeiro argumento define a string dentro do input.
-    # (2) O segundo argumento define a mensagem de erro, em formato de string.
-    # (3) O terceiro argumento define o critério para a validação,
-    #  através de uma lista.
+    # (1) The first argument defines the string inside the input.
+    # (2) The secound argument defines an error message, in string format.
+    # (3) The third argument defines the validation criteria,
+    #  through a list / tuple / dictionary.
 
     message_size = len(error_message)
     while True:
