@@ -9,7 +9,6 @@ def erase_line(size):
     # The argument defines a numeric size of the last output, then, erases it.
 
     columns = int(str(get_terminal_size()).split('=')[1].split(',')[0])
-
     lines = 1
     while size >= columns:
         size -= columns
@@ -19,6 +18,7 @@ def erase_line(size):
 
 
 def name_input(the_input):
+    
     while True:
         variable = input(the_input)
         size = len(the_input)+len(variable)
@@ -30,6 +30,7 @@ def name_input(the_input):
             erase_line(size)
             print(f'{the_input}{variable}')
             break
+            
     return variable
 
 
@@ -54,6 +55,7 @@ def int_input(the_input, error_message):
             erase_line(size)
             print(f'{the_input}{variable}')
             break
+            
     return variable
 
 
@@ -82,4 +84,5 @@ def opt_input(the_input,  options, error_message):
             erase_line(size)
             print(f'{the_input}{variable}')
             break
+            
     return variable
